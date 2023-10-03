@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>google chat</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- iconic link -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body style="background-color: #eeeeee70;">
+    <!-- navbar section -->
+    <header class="header">
+        <nav class="navbar">
+            <ul class="navbar-lists navbar-lists1">
+                <div class="logoimg">
+                    <ion-icon name="menu-outline" class="menu" id="show"></ion-icon>
+                    <img src="./image/logo_chat_default_1x.png" alt="chat">
+                </div>
+                <div class="search">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Find people ,spaces and message" name="search">
+                    </form>
+                </div>
+            </ul>
+            <div class="right-icon">
+                <select name="Active" id="Active">
+                    <option value="volvo"> Active</option>
+                    <option value="volvo"> Automatic</option>
+                    <option value="saab">Do not disturb</option>
+                    <option value="mercedes">Set as away</option>
+                    <option value="">add a status</option>
+                </select>
+                <ion-icon name="help-circle-outline" class="icons"></ion-icon>
+                <ion-icon name="settings-outline" class="icons"></ion-icon>
+                <ion-icon name="apps-outline" class="icons"></ion-icon>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <aside id="showMenu">
+            <div id="chat">
+                <span>
+                    <i class="fa fa-caret-down" id="showChat"></i>
+                    Chat 
+                    <i class="fa fa-plus" style="float: right;position: relative;top: 4px;">
+                    </i>
+                    <div id="chatBox">
+                        <p>No conversations</p>
+                        <p><a href="#"style="color: rgb(0, 94, 255);">Find a chat</a></p>
+                    </div>
+                </span>
+            </div>
+    
+            <div id="chat">
+                <span>
+                    <i class="fa fa-caret-down" id="showSpaces"></i>
+                    Spaces 
+                    <i class="fa fa-plus" style="float: right;position: relative;top: 4px;">
+                    </i>
+                    <div id="chatBox">
+                        <p>No spaces yet</p>
+                        <p><a href="#" style="color: rgb(0, 94, 255);">Find a space to join</a></p>
+                    </div>
+                </span>
+            </div>
+        </aside>
+        <div class="container">
+            <div class="grid grid-two-column">
+
+
+                <div class="left-container">
+                    <ion-icon name="arrow-back-outline" class="icon"></ion-icon>
+                    <div class="name-container">
+                        <div class="name">s </div>
+                        <div class="name1">
+                            <p>niraj kumar</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-container">
+                    <ion-icon name="search-outline" class="icon"></ion-icon>
+                    <ion-icon name="browsers-outline" class="icon"></ion-icon>
+                    <ion-icon name="chatbox-ellipses-outline" class="icon"></ion-icon>
+                </div>
+            </div>
+            <nav class="navbar">
+                <ul class="navbar-lists">
+                    <li><a href="#" class="navbar-link">Chat</a></li>
+                    <li><a href="#" class="navbar-link">Files</a></li>
+                    <li><a href="#" class="navbar-link">Tasks</a></li>
+                </ul>
+
+            </nav>
+            <hr>
+           <div class="containerr">
+            <div>
+                <img src="image/download.png" alt="chat">
+            </div>
+            <div class="spaceToday">
+                <span>You created this space today</span>
+            </div>
+            <div>
+                <button><i class='bx bx-user-plus'></i>Add people and Apps</button>
+                <button><i class='bx bx-share-alt'></i> Share a file</button>
+                <button><i class='bx bx-task'></i> Assign tasks</button>
+            </div>
+            <div class="history1">
+                <h3><i class='bx bx-history'></i> history is on</h3>
+                <span>Messages sent with the history turned on are saved</span>
+            </div>
+           </div>
+           <div>
+            <div id="reply"></div>
+            <form action="" autocomplete="off">
+                <i class='bx bx-plus-circle' id="add"></i>
+                <input type="text" placeholder="History is on" id="sendMessage">
+                <i class='bx bx-send' id="sendReply"></i>
+            </form>
+        </div>
+        </div>
+        <div id="calender">
+            <i class='bx bx-calendar' id="cal"></i>
+            <i class='bx bxs-bulb' id="bulb"></i>
+            <i class='bx bx-check-circle' id="check"></i>
+            <i class='bx bxs-user' id="user"></i>
+        </div>
+    </section>
+    
+</body>
+<script src="script.js"></script>
+</html>
